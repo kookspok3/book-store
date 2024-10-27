@@ -1,0 +1,387 @@
+/* General Styles */
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Header */
+header {
+    height: 70px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0rem 2rem;
+}
+.img-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.search-bar input {
+    width: 300px;
+}
+
+
+.user-cart{
+    display: flex;
+    gap: 3rem;
+}
+.user-cart a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: ease all 0.3s;
+}
+.user-cart a:hover{
+    transform: scale(1.08);
+}
+.user-cart a img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#carrito{
+    position: absolute;
+}
+#name-carrito{
+    position: relative;  
+    right: -1.8rem;
+}
+
+#books-carrito{
+    background-color: rgb(251, 82, 82);
+    position: absolute;
+    right: -0.2rem;
+    top: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#shopping-cart{
+    margin-right: 1.5rem;
+}
+
+
+
+
+/* Sidebar */
+.fixed-left {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav a {
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #8eeffae4;
+}
+
+/* Main Content */
+.books-grid {
+    margin-left: 220px; /* Espacio para el sidebar */
+    margin-top: 70px;
+    width: calc(100% - 220px);
+    padding: 20px;
+}
+
+/* Libros */
+.book-card {
+    max-width: calc(23%); /* Ancho máximo ajustado */
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.book-info {
+    margin-top: 10px;
+}
+
+.book-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.book-description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Ajusta la altura según sea necesario */
+    width: 95%;
+    margin-left: 12px;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho del contenedor */
+    height: 100%; /* Altura completa del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Tamaño de texto */
+    color: white; /* Color del texto */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slide a{
+    width: 100%;
+    height: 100%;
+}
+
+/* Añadir animación para el carrusel */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(0); }
+    40% { transform: translateX(-100%); }
+    73.33% { transform: translateX(-100%); }
+    80% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+.slides {
+    animation: slideAnimation 9s infinite;
+}
+
+
+
+/* Sección de Más Vendidos */
+.best-sellers,
+.new-arrivals,
+.critically-acclaimed {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.best-sellers h3,
+.new-arrivals h3,
+.critically-acclaimed h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.best-sellers-row,
+.new-arrivals-row,
+.critically-acclaimed-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Botón Ver más */
+.see-more {
+    margin-top: 20px;
+    text-align: left; /* Botón alineado a la izquierda */
+}
+
+.btn-see-more {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.btn-see-more:hover {
+    text-decoration: underline;
+}
+
+/* Autores Destacados Section */
+/* Sección de Autores Destacados */
+.featured-authors {
+    margin: 80px 0;
+    text-align: center;
+    color: #333;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.authors-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.author-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.author-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.author-img-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.author-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.author-card:hover .author-img {
+    transform: scale(1.1);
+}
+
+.author-info {
+    padding: 20px;
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.author-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .book-card {
+        flex: 1 1 calc(48%); /* Dos por fila en tabletas */
+    }
+
+    .author-card {
+        flex: 1 1 calc(100%); /* Uno por fila en móviles */
+    }
+
+    .carousel-container {
+        height: 250px; /* Altura menor para dispositivos más pequeños */
+    }
+
+    .search-bar input {
+        width: 200px; /* Ajusta el tamaño del input en pantallas pequeñas */
+    }
+}
+
+/* FOOTER */
+footer{
+    width: calc(100%-220px);
+    margin-left: 220px;
+    overflow: hidden;
+}
+.footer {
+    padding: 40px 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f8f9fa;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .form-control {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.footer .btn {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.social-icons a {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.social-icons i {
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
