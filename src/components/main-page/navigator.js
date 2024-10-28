@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import { Link } from 'react-router-dom';
 
 const Navigator = ()=>{
     return(
@@ -7,19 +7,19 @@ const Navigator = ()=>{
             <h3 class="p-3">Categorías</h3>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Aventura</a>
+                    <Link  to='/components/adventure' class="nav-link text-dark">Aventura</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Economía</a>
+                    <Link to='/components/adventure' class="nav-link text-dark">Economía</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Romance</a>
+                    <Link to="/romance" class="nav-link text-dark">Romance</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Desarrollo Personal</a>
+                    <Link to="/personalDevelopment" class="nav-link text-dark">Desarrollo Personal</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#">Filosofía</a>
+                    <Link to="/philosofy" class="nav-link text-dark">Filosofía</Link>
                 </li>
             </ul>
         </nav>

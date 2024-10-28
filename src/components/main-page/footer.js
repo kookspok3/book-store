@@ -1,5 +1,4 @@
 import React from "react";
-import '../styles.css';
 
 const Footer = ()=>{
     return(
@@ -50,7 +49,7 @@ const Footer = ()=>{
               </div>
               <div class="row mt-4">
                 <div class="col text-center">
-                  <p>&copy; 2024 Your Bookstore. All Rights Reserved.</p>
+                  <p>&copy; 2024 DG. All Rights Reserved.</p>
                 </div>
               </div>
             </div>
