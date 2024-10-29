@@ -58,7 +58,7 @@ const Principal = ()=>{
                     </a>
                 </div>
                 <div class="see-more">
-                    <a href="#" class="btn-see-more">Ver más...</a>
+                    <Link to="/best-sellers" class="btn-see-more">Ver más...</Link>
                 </div>
             </section>
 
@@ -107,7 +107,7 @@ const Principal = ()=>{
                     </a>
                 </div>
                 <div class="see-more">
-                    <a href="#" class="btn-see-more">Ver más...</a>
+                    <Link to="/new-arrivals" class="btn-see-more">Ver más...</Link>
                 </div>
             </section>
 
@@ -156,14 +156,14 @@ const Principal = ()=>{
                     </a>
                 </div>
                 <div class="see-more">
-                    <a href="#" class="btn-see-more">Ver más...</a>
+                    <Link to="/critycally-acclaimed" class="btn-see-more">Ver más...</Link>
                 </div>
             </section>
 
             <section class="featured-authors">
                 <h3 class="section-title">Autores Destacados</h3>
                 <div class="authors-grid">
-                    <a href="" class="author-card">
+                    <Link to="/garcia-marquez" class="author-card">
                         <div class="author-img-container">
                             <img src="/images/GarciaMarquez.jpeg" alt="Gabriel García Márquez" class="author-img"></img>
                         </div>
@@ -171,8 +171,8 @@ const Principal = ()=>{
                             <h4 class="author-name">Gabriel García Márquez</h4>
                             <p class="author-description">Autor colombiano, ganador del Nobel, famoso por "Cien años de soledad".</p>
                         </div>
-                    </a>
-                    <a href=""  class="author-card">
+                    </Link>
+                    <Link to="/isabel-allende"  class="author-card">
                         <div class="author-img-container">
                             <img src="/images/IsabelAllende.jpeg" alt="Isabel Allende" class="author-img"></img>
                         </div>
@@ -180,8 +180,8 @@ const Principal = ()=>{
                             <h4 class="author-name">Isabel Allende</h4>
                             <p class="author-description">Escritora chilena, destacada por "La casa de los espíritus".</p>
                         </div>
-                    </a>
-                    <a href=""  class="author-card">
+                    </Link>
+                    <Link to="/luis-borges"  class="author-card">
                         <div class="author-img-container">
                             <img src="/images/LuisBorges.webp" alt="Jorge Luis Borges" class="author-img"></img>
                         </div>
@@ -189,7 +189,7 @@ const Principal = ()=>{
                             <h4 class="author-name">Jorge Luis Borges</h4>
                             <p class="author-description">Célebre escritor argentino de "Ficciones" y "El Aleph".</p>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </section>
 
